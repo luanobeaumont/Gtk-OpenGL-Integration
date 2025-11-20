@@ -1,18 +1,15 @@
-# OpenGL-Gtk Integration Application
+# OpenGL-Gtk Integration
 
-Integration of Gtk as wrapper for OpenGL.
+A high-performance application integrating native OpenGL rendering within a Gtk3 window using `GtkGLArea`.
 
-##
-Gtk3.0
-OpenGL
+## Dependencies
 
-## Build Instructions
-*   Run this bash command to compile the code.
+To build this project on Debian/Ubuntu, you must install the following development packages:
+
+- `build-essential` (Compiler)
+- `libgtk-3-dev` (Gtk3 Toolkit)
+- `libepoxy-dev` (OpenGL Function Pointer Manager)
+
+Install command:
 ```bash
-g++ main.cpp -o <appnameexecutable> $(pkg-config --cflags --libs gtk+-3.0 epoxy)
-```
-
-*   Then run the executable file
-```bash
-./<appnameexecutable>
-```
+sudo apt install build-essential libgtk-3-dev libepoxy-dev
